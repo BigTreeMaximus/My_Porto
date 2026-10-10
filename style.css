@@ -612,7 +612,7 @@ body {
     }
 
     .gallery-img {
-        height: 300px;
+        height: 100%;
     }
 
     .footer-info {
