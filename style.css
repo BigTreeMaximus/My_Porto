@@ -584,10 +584,22 @@ body {
         width: auto;
     }
 
+    .structure-section-1 {
+        max-width: 700px;  
+        margin: 0 auto;    
+        gap: 30px;         
+    }
+
+    
+    .structure-picture {
+        max-width: 300px;  
+        margin: 0 auto;    
+    }
+
     .structure-picture img {
         width: 100%;
-        height: 250px;  
-        object-fit: cover;
+        aspect-ratio: 1 / 1; 
+        object-fit: cover;  
     }
 
     .about-container {
