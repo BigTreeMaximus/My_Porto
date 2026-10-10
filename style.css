@@ -509,14 +509,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 320px; 
-    flex-shrink: 0;
-    
+    width: 250px; 
 }
 
 .gallery-img{
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
@@ -610,7 +608,7 @@ body {
     }
 
     .slider-card-wrapper {
-        max-width: 320px;
+        max-width: 220px;
     }
 
     .gallery-img {
