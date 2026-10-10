@@ -613,12 +613,12 @@ body {
 
     .slider-card-wrapper {
         width: 100%;
-        max-width: 400px;
+        max-width: 350px;
     }
 
     .gallery-img {
-        height: 300px;
-        aspect-ratio: 1 / 1; 
+        width: 100%;
+        height: 250px;     
         object-fit: cover;
     }
 
