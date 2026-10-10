@@ -21,6 +21,7 @@ body {
     overflow-x: hidden;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .hero-section {
@@ -29,6 +30,14 @@ body {
     background-position: center;
     padding: 40px 20px;
     text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    position: relative;
 }
 
 .hero-content h1 {
@@ -44,7 +53,7 @@ body {
 
 @keyframes fadeInfromtop {
     from { opacity: 0; transform: translateY(-50px); }
-    to { opacity: 100; transform: translateY(0); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .hero-content p {
@@ -60,9 +69,15 @@ body {
 
 @keyframes fadeInfromleft {
     from { opacity: 0; transform: translateX(-50px); }
-    to { opacity: 100; transform: translateX(0); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 
 .btn-contact {
     display: inline-flex;
@@ -82,7 +97,7 @@ body {
 
 @keyframes fadeInfromright {
     from { opacity: 0; transform: translateX(50px); }
-    to { opacity: 100; transform: translateX(0); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
 .btn-contact i {
@@ -95,13 +110,14 @@ body {
     margin: 0;
     font-weight: 600;
 }
+
 .btn-contact:hover {
     transform: scale(1.05);
     background-color: #2e7d32;
     color: #ffffff;
 }
 
-.btn-menu{
+.btn-menu {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -114,27 +130,26 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     transition: transform 0.2s;
     border: 2px solid #675F8E;
-    margin-top: 10px;
     animation: fadeInfrombottom 1s ease-in-out;
 }
 
 @keyframes fadeInfrombottom {
     from { opacity: 0; transform: translateY(50px); }
-    to { opacity: 100; transform: translateY(0); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.btn-menu i{ 
+.btn-menu i { 
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.btn-menu h2{
+.btn-menu h2 {
     font-size: 14pt;
     margin: 0;
     font-weight: 600;
 }
 
-.btn-menu:hover{
+.btn-menu:hover {
     transform: scale(1.05);
     background-color: #675F8E;
     color: #ffffff;
@@ -142,12 +157,10 @@ body {
 
 .structure-section-1 {
     padding: 10px 20px;
-    padding-left: 20px;
     display: flex;
     justify-content: space-between;
     background-color: #675F8E;
     gap: 20px;
-
 }
 
 .structure-picture {
@@ -157,7 +170,7 @@ body {
     text-align: center;
     -webkit-text-stroke: 0.2px #ffffff;
     border: 2px solid #333;
-    flex:1;
+    flex: 1;
 }
 
 .structure-picture img {
@@ -191,14 +204,11 @@ body {
     font-weight: 800;
     font-family: sansation;
     -webkit-text-stroke: 0.5px #ffffff;
-
 }
-
 
 .about-container {
     width: 100%;
 }
-
 
 .about-top {
     display: flex;
@@ -208,22 +218,10 @@ body {
     font-family: playfair display;
 }
 
-
-.about-image {
-    width: 50%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid #111;
-}
-
-
 .about-title-box {
     flex: 1;
     text-align: center;
-
 }
-
 
 .about-title-box h2 {
     display: inline-block;
@@ -235,9 +233,7 @@ body {
     line-height: 1;
     margin-bottom: 7px;
     box-shadow: 0 0 0 1px #111;
-    
 }
-
 
 .about-title-box p {
     font-size: 11.5px;
@@ -248,9 +244,7 @@ body {
     border-radius: 8px;
     font-family: "Open Sans";
     border: 1px solid #111;
-    
 }
-
 
 .about-description {
     background: #fff;
@@ -259,7 +253,6 @@ body {
     padding: 6px 10px;
     margin-top: 7px;
 }
-
 
 .about-description p {
     font-size: 11.5px;
@@ -303,7 +296,6 @@ body {
     padding: 6px 4px;
     font-family: 'Open Sans', sans-serif;
     -webkit-text-stroke: 0.2px #ffffff;
-    
 }
 
 .social-section {
@@ -329,9 +321,10 @@ body {
     font-size: 1.5rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     text-decoration: none;
+    transition: transform 0.2s;
 }
 
-.icon-box:hover{
+.icon-box:hover {
     transform: scale(1.2);
 }
 
@@ -339,7 +332,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 .footer-section {
@@ -392,39 +384,32 @@ body {
     margin-bottom: 10px;
 }
 
-
-/* Styling untuk Banner Bunga Lanskap */
+/* Banner Bunga */
 .flower-banner-landscape.top-banner {
     position: absolute;
     top: 0;
     left: 0; 
     width: 100%;
-    height: 35px; /* Sesuaikan tinggi gambar bunga kamu */
-    background-image: url('image/pngtree-elegant-black-floral-cloth-pattern-texture-png-image_15487222.png'); /* Ganti dengan nama file gambar bunga kamu */
-    background-repeat: repeat-x; /* Membuat gambar berulang ke samping (kiri ke kanan) */
+    height: 35px;
+    background-image: url('image/pngtree-elegant-black-floral-cloth-pattern-texture-png-image_15487222.png');
+    background-repeat: repeat-x;
     background-position: center;
-    background-size: auto 35px; /* Mengatur tinggi, lebar menyesuaikan */
+    background-size: auto 35px;
     z-index: 2;
 }
 
 .flower-banner-landscape.bottom-banner {
     position: absolute;
-    bottom: 100;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 45px; /* Sesuaikan tinggi gambar bunga kamu */
-    background-image: url('image/pngtree-elegant-black-floral-cloth-pattern-texture-png-image_15487222.png'); /* Ganti dengan nama file gambar bunga kamu */
-    background-repeat: repeat-x; /* Membuat gambar berulang ke samping (kiri ke kanan) */
+    height: 35px;
+    background-image: url('image/pngtree-elegant-black-floral-cloth-pattern-texture-png-image_15487222.png');
+    background-repeat: repeat-x;
     background-position: center;
-    background-size: auto 35px; /* Mengatur tinggi, lebar menyesuaikan */
+    background-size: auto 35px;
     z-index: 2;
 } 
-
-.hero-content {
-    text-align: center;
-    padding: 20px;
-    z-index: 2;
-}
 
 .zoomable-img {
     cursor: pointer;
@@ -489,7 +474,7 @@ body {
     -webkit-text-stroke: 0.5px #ffffff;
 }
 
-.slider-button{
+.slider-button {
     color: #2b1d16; 
     background: transparent;
     border: none;
@@ -511,10 +496,9 @@ body {
     align-items: center;
     width: 320px; 
     flex-shrink: 0;
-    
 }
 
-.gallery-img{
+.gallery-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -524,19 +508,18 @@ body {
     display: block;
 }
 
-.galler-img:hover {
+.gallery-img:hover {
     opacity: 0.85;
 }
 
-.gallery-slider{
+.gallery-slider {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 5px;
-    
 }
 
-.gallery-card{
+.gallery-card {
     background-color: #f4eee1;
     border-radius: 10px;
     overflow: hidden;
@@ -558,18 +541,16 @@ body {
 }
 
 /* ===================================================
-   KODE TAMBAHAN TAMPILAN DESKTOP (Layar > 768px)
+   TAMPILAN DESKTOP (Otomatis Aktif Jika Layar > 768px)
    =================================================== */
 @media screen and (min-width: 768px) {
     
-    /* Melebarkan kontainer utama dari 430px menjadi 1020px */
     .mobile-container {
         max-width: 1020px;
-        border-radius: 12px;
+        border-radius: 16px;
         margin: 30px auto;
     }
 
-    /* Merapikan Hero Section & Tombol berjejer samping */
     .hero-section {
         padding: 60px 40px;
     }
@@ -583,35 +564,29 @@ body {
     }
 
     .hero-buttons {
-        display: flex;
+        flex-direction: row;
         justify-content: center;
         gap: 20px;
         margin-top: 20px;
     }
 
-    .btn-menu {
-        margin-top: 0;
-    }
-
-    /* Struktur Organisasi / Foto Tim */
     .structure-section-1 {
         padding: 30px 40px;
         gap: 40px;
     }
 
     .structure-picture img {
-        height: 250px;
+        height: 260px;
     }
 
-    /* Layout About Us menyamping */
     .about-section {
         padding: 30px 40px;
     }
 
     .about-container {
         display: flex;
-        gap: 20px;
-        align-items: center;
+        gap: 25px;
+        align-items: stretch;
     }
 
     .about-top {
@@ -622,13 +597,14 @@ body {
         flex: 1;
         margin-top: 0;
         padding: 20px;
+        display: flex;
+        align-items: center;
     }
 
     .about-description p {
         font-size: 14px;
     }
 
-    /* Macam-Macam Servis Tenda jadi 4 Kolom berjejer */
     .services-section {
         padding: 30px 40px;
     }
@@ -639,23 +615,21 @@ body {
     }
 
     .service-item img {
-        height: 160px;
+        height: 180px;
     }
 
-    /* Galeri diperbesar */
     .gallery-section {
         padding: 30px 40px;
     }
 
     .slider-card-wrapper {
-        width: 500px;
+        width: 550px;
     }
 
     .gallery-img {
-        height: 320px;
+        height: 350px;
     }
 
-    /* Footer diperluas */
     .footer-section {
         padding: 40px;
     }
