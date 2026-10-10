@@ -607,11 +607,14 @@ body {
     }
 
     .slider-card-wrapper {
-        max-width: 500px;
+        width: 100%;
+        max-width: 400px;
     }
 
     .gallery-img {
         height: 300px;
+        aspect-ratio: 1 / 1; 
+        object-fit: cover;
     }
 
     .footer-info {
