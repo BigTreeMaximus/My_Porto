@@ -555,47 +555,52 @@ body {
     -webkit-text-stroke: 0.2px #ffffff;
 }
 
+/* Ganti / Timpa bagian @media paling bawah di style.css dengan ini */
 @media screen and (min-width: 769px) {
     
+    /* Mengunci lebar konten laptop agar pas & berada di tengah layar */
     .mobile-container {
-        max-width: 1000px;
+        max-width: 960px; /* Lebar ideal untuk laptop 13-15 inci */
+        margin: 40px auto; /* Membuat posisi persis di tengah layar laptop */
         border-radius: 16px;
-        margin: 30px auto;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     .hero-section {
-        padding: 60px 40px;
+        padding: 50px 30px;
     }
 
     .hero-content h1 {
-        font-size: 48pt;
+        font-size: 38pt; /* Ukuran judul disesuaikan agar pas di laptop */
     }
 
     .hero-content p {
-        font-size: 16pt;
+        font-size: 14pt;
     }
 
     .hero-buttons {
         flex-direction: row;
         justify-content: center;
+        gap: 15px;
     }
 
     .btn-contact, .btn-menu {
         width: auto;
+        padding: 10px 20px;
     }
 
     .structure-picture img {
-        height: 220px;
+        height: 200px;
     }
 
     .about-container {
         flex-direction: row;
         align-items: stretch;
+        gap: 20px;
     }
 
     .about-title-box, .about-description {
         flex: 1;
-        text-align: center;
     }
 
     .services-grid {
@@ -604,24 +609,20 @@ body {
     }
 
     .service-item img {
-        height: 160px;
+        height: 140px;
     }
 
     .slider-card-wrapper {
-        max-width: 500px;
+        max-width: 450px;
     }
 
     .gallery-img {
-        height: 300px;
+        height: 260px;
     }
 
     .footer-info {
-        max-width: 650px;
+        max-width: 600px;
         margin: 0 auto;
-        font-size: 0.9rem;
-    }
-
-    .info-row {
-        grid-template-columns: 120px 20px 1fr;
+        font-size: 0.85rem;
     }
 }
