@@ -608,7 +608,7 @@ body {
     }
 
     .slider-card-wrapper {
-        width: 100%;
+        max-width: 100%;
     }
 
     .gallery-img {
