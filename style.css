@@ -612,6 +612,8 @@ body {
 
     .gallery-img {
         height: 300px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
     }
 
     .footer-info {
