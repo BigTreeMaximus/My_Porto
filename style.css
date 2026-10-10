@@ -585,7 +585,9 @@ body {
     }
 
     .structure-picture img {
-        height: 220px;
+        width: 100%;
+        height: 250px;  
+        object-fit: cover;
     }
 
     .about-container {
