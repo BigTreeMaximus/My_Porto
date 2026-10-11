@@ -584,15 +584,11 @@ body {
         width: auto;
     }
 
-    .structure-section-1 {  
-        gap: 10px;         
-    }
-
-    
     .structure-picture {
         mwidth: 100%;
         max-width: 350px;  
-        margin: 0 auto;    
+        margin: 0 auto;
+        gap: 10px;
     }
 
     .structure-picture img {
@@ -621,8 +617,8 @@ body {
     }
 
     .icon-box {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     .gallery-slider {
