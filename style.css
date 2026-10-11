@@ -610,6 +610,7 @@ body {
     .services-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 15px;
+        justify-items: center;
     }
 
     .service-item img {
