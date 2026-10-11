@@ -611,8 +611,8 @@ body {
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
         display: grid;
-        max-width: 500px;
-        width: 200px;
+        height: 160px;
+        width: 220px;
         margin: auto;
     }
 
