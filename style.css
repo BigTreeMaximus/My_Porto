@@ -620,6 +620,11 @@ body {
         height: 160px;
     }
 
+    .icon-box {
+        width: 150px;
+        height: 150px;
+    }
+
     .gallery-slider {
         max-width: 600px; /* Batasi lebar total slider agar tombol panah dan kartu pas */
         margin: 0 auto;
