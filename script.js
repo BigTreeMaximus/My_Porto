@@ -72,20 +72,49 @@ socialIcons.forEach((icon) => {
 });
 
     const galleryData = [
-    { image: "image/gmaps.webp",
-      title:"Logo"
+    { image:"image/Kipas Blower dan Kursi Futura.webp",
+      title:"Kursi Futura dan Kipas Blower"
     },
-    { image: "image/Panggung.webp",
-      title:"Logo"
+    { image:"image/Meja Gubugan (1).webp",
+      title:"Meja Gubugan"
     },
-    { image: "image/tim adr tenda.webp",
-      title:"Logo"
+    { image:"image/AC Berdiri.webp",
+      title:"Standing AC"
+    },
+    { image:"image/Kursi kayu ukir (Vip) (1).webp",
+      title:"Kursi Kayu Ukir"
+    },
+    { image:"image/Persewaan Karpet +Ac (1).webp",
+      title:"Karpet"
+    },
+    { image:"image/Standing Flowers.webp",
+      title:"Standing Flower"
+    },
+    { image:"image/Contoh model pelaminan (1).webp",
+      title:"Model Pelaminan"
+    },
+    { image:"image/Dekorasi pintu masuk (1).webp",
+      title:"Dekorasi Pintu Masuk"
+    },
+    { image:"image/Kursi lipat chitose (1).webp",
+      title:"Kursi Lipat Chitose"
+    },
+    { image:"image/Kursi cover.webp",
+      title:"Kursi Plastik Non Cover dan Kursi Plastik Cover"
+    },
+    { image:"image/Kotak Amplop.webp",
+      title:"Model Kotak Amplop"
+    },
+    { image:"image/Kembang dekorasi.webp",
+      title:"Kembang Dekorasi"
     }
+    
 ];
 
 let eventIndex = 0;
 
 const galleryImg = document.querySelector('.gallery-img');
+const galleryTitle = document.querySelector('.gallery-info h3');
 const eventPrevBtn = document.getElementById('eventPrevBtn');
 const eventNextBtn = document.getElementById('eventNextBtn');
 const eventCardWrapper = document.querySelector('.gallery-card'); 
@@ -101,6 +130,7 @@ function updateEventSlider(index) {
     
     setTimeout(() => {
         galleryImg.src = galleryData[index].image;
+        galleryTitle.textContent = galleryData[index].title;
         eventCardWrapper.style.opacity = 1;
     }, 150);
 }
